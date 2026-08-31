@@ -2,19 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ex2;
+
 
 /**
  *
  * @author cruzb
  */
-public class Contador {
+public class Contador2 {
 
      private int count;
     
-    public Contador(){} //construtor da classe para o valor passado por defeito (0)
+    public Contador2(){} //construtor da classe para o valor passado por defeito (0)
     
-    public Contador(int c){//para passar um valor que queremos dar
+    public Contador2(int c){//para passar um valor que queremos dar
         count =c;
     } 
     
@@ -40,8 +40,8 @@ public class Contador {
     }
     
     @Override 
-    public Contador clone(){
-        return new Contador(count);// new cria mum novo end na memoria 
+    public Contador2 clone(){
+        return new Contador2(count);// new cria mum novo end na memoria 
     }
     
     @Override 
@@ -49,7 +49,7 @@ public class Contador {
         if(obj == null || obj.getClass() != this.getClass()){ // usamos sempre assim para um equals
             return false;
         }else 
-            return count == ((Contador)obj).count;    
+            return count == ((Contador2)obj).count;    
     }
 }
 
