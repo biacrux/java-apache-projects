@@ -7,12 +7,12 @@
  *
  * @author cruzb
  */
-public class Contador {
+public class Contador1 {
     private int count;
     
-    public Contador(){} //construtor da classe para o valor passado por defeito (0)
+    public Contador1(){} //construtor da classe para o valor passado por defeito (0)
     
-    public Contador(int c){//para passar um valor que queremos dar
+    public Contador1(int c){//para passar um valor que queremos dar
         count =c;
     } 
     
