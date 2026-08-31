@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package projeto_3;
 
 /**
@@ -10,25 +6,33 @@ package projeto_3;
  */
 public class Projeto_3 {
 
-    interface Animal{
+    interface Animal {
         void fazerSom();
     }
     
-    class Cao implements Animal{ // esta classe tem de ter o fazer so pq herdou de animal
-        public void fazerSom(){
-            System.out.println("Au , Au");
+    static class Cao implements Animal { // esta classe tem de ter o fazerSom pq herdou de Animal
+        public void fazerSom() {
+            System.out.println("Au, Au");
         }
     }
     
-    class Gato implements Animal{
-        public void fazerSom(){
+    static class Gato implements Animal {
+        public void fazerSom() {
             System.out.println("Miau");
         }
     }
     
-    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Animal cao = new Cao();
+        Animal gato = new Gato();
+        
+        cao.fazerSom();
+        gato.fazerSom();
+        
+        // Testar com um array de Animal (polimorfismo)
+        Animal[] animais = { new Cao(), new Gato(), new Cao() };
+        for (Animal a : animais) {
+            a.fazerSom();
+        }
     }
-    
 }
